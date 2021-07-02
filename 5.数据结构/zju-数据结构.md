@@ -775,7 +775,7 @@ public:
         {
             int size=q.size();//这就是这一层的结点个数
             vector<int> array;
-            for(int i=0;i<s	ize;i++)//一个for循环就是一层
+            for(int i=0;i<size;i++)//一个for循环就是一层
             {
                 TreeNode* temp=q.front();
                 q.pop();
@@ -2625,7 +2625,7 @@ void TopSort()
     while(!IsEmpty(Q))
     {
         V=Dequeue(Q);//从队里拿出来的，必定是入度为0的顶点
-        输出V，或者记录V的输出序号；cnt++;//用来记录输出了多少次
+        输出V，或者记录V的输出序号;cnt++;//用来记录输出了多少次
         //输出以后，把V从原图里抹掉，方法是将V的邻接点的入度都减1，就假装删掉了V。
         for(V的每个邻接点W)
         {
